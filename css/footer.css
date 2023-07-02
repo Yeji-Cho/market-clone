@@ -48,6 +48,6 @@ footer{
     width: 30px;
 }
 
-.footer-icons: :hover .footer-icons_img {
+.footer-icons:hover .footer-icons_img {
     animation: 2s icons-float;
 }
