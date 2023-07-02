@@ -23,12 +23,31 @@ footer{
     cursor: pointer;
 }
 
-.footer-icons_img{
-    width: 30px;
-}
-
 .footer-icons__desc{
     margin-top: 5px;
     font-size: 10px;
     font-weight: bold;
+}
+
+@keyframes icons-float{
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    70% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.footer-icons_img{
+    width: 30px;
+}
+
+.footer-icons: :hover .footer-icons_img {
+    animation: 2s icons-float;
 }
